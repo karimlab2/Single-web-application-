@@ -1,0 +1,12 @@
+<div class="col-md-12 col-lg-12 col-sm-12">
+<h2>List of Matching items</h2>
+<ol>
+  <li ng-repeat="item in foundItems">
+   <b>Name:</b>  {{ item.name }}, <br>
+   <b>Short Name:</b> {{ item.short_name }} , <br>
+   <b>Description</b> {{ item.description }} , <br>   
+   <button ng-click="onRemove({index: $index});">Don't want this one!</button> <br>
+  </li>
+</ol>
+<p ng-if="emptyList">Nothing found</p>
+</div>
