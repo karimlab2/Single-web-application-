@@ -1,0 +1,15 @@
+&lt;
+<span>
+  <a ui-sref="categories">Categories</a>
+</span>
+&lt;
+<span>
+  <a ui-sref="items({category: itemsCtrl.itemsResult.category.short_name})">
+    {{itemsCtrl.itemsResult.category.name}}
+  <a>
+</span>
+<h3>
+  {{itemsCtrl.itemsResult.category.name}}
+</h3>
+
+<items items="itemsCtrl.itemsResult.menu_items"></items>
